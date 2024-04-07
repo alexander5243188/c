@@ -2,6 +2,7 @@
 
 //Definimos el dato de la semana 
 enum DIA_SEMANA {LUNES, MARTES, MIERCOLES, JUEVES, VIERNES, SABADO, DOMINGO};
+const char* nombresDias[] = {"Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"};
 
 int main(){
     // Declaramos la variable hoy de tipo DIA_SEMANA
@@ -39,7 +40,33 @@ int main(){
         break;    
     default:
         printf("Número invalido, debe estar entre 1 y 7\n");     
-        return 1;
+        return 1; // salimos del programa con código de error
+    }
+    // Mostramo el día de la semana
+    switch (hoy)
+    {
+    case LUNES/* constant-expression */:
+        /* code */
+        printf("Hoy es %s\n", nombresDias[hoy]);
+        break;
+    case MARTES:
+        printf("Hoy es %d\n", hoy);
+        break;
+    case MIERCOLES:
+        printf(" Hoy es %d\n", hoy);
+        break;
+    case JUEVES:
+        printf("Hoy es %d\n", hoy);
+        break;
+    case VIERNES:
+        printf("Hoy es %d\n", hoy);
+        break;
+    case SABADO:
+        printf("Hoy es %d\n", hoy);
+        break;
+    case DOMINGO:
+        printf("Hoy es %d\n", hoy);
+        break;
     }
 
     return 0;
