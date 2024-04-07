@@ -28,6 +28,5 @@ int main(){
     {
         printf("Alto %d, Ancho %d, no son datos de un cuadrado\n", alto, ancho);
     }
-    return 0;
-    
+    return 0;    
 }
